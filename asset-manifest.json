@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/DIH/static/css/main.7b2dcc3d.css",
+    "main.js": "/DIH/static/js/main.7a4cd2ae.js",
+    "static/js/453.ed3810f9.chunk.js": "/DIH/static/js/453.ed3810f9.chunk.js",
+    "index.html": "/DIH/index.html",
+    "main.7b2dcc3d.css.map": "/DIH/static/css/main.7b2dcc3d.css.map",
+    "main.7a4cd2ae.js.map": "/DIH/static/js/main.7a4cd2ae.js.map",
+    "453.ed3810f9.chunk.js.map": "/DIH/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b2dcc3d.css",
+    "static/js/main.7a4cd2ae.js"
+  ]
+}
