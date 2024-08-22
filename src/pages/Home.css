@@ -16,16 +16,15 @@
   object-fit: cover;
   z-index: -1;
 }
-
 .navbar {
   position: absolute;
-  bottom: 50%; 
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
-  padding: 10px 20px;
+  width: max-content;
   z-index: 1;
-}
 
+}
 .nav-links {
   list-style: none;
   display: flex;
@@ -35,48 +34,56 @@
 }
 
 .nav-links li {
-  margin: 0 15px;
+  margin: 10px 15px ;
+  
+ 
 }
-
-.nav-links a {
+.link {
   text-decoration: none;
-  color: white;
-  font-size: 26px;
-  line-height: 36px;
+  color: rgba(255, 255, 255, 0.801);
+  font-size: 30px;
+
+  /* text-shadow: 3px -3px 11px rgba(255, 255, 255, 0.829); */
+  cursor: pointer;
+
+}
+.nav-links a:hover{
+  color: black;
+  text-shadow: -1px -3px 17px rgba(255, 255, 255, 0.705);
 }
 
 .book-now-container {
   background-color: #486A9E;
   color: white;
   border: none;
-  border-radius: 0 0 150px 150px;
-  width: 300px;
-  height: 150px;
+  border-radius: 0 0 150px 500px;
+  width: 190px;
+  height: 140px;
   font-size: 16px;
-  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: all 0.5s ease;
+  transition: all 0.5s ease; /* Add this line for smooth transition */
   position: relative;
   cursor: pointer;
-  left: 85%;
+  left: 90%;
   overflow: hidden;
 }
 
 .book-now-container.expanded {
-  width: 350px;
-  height: 450px;
-  border-radius: 20px;
+  width: 50%; 
+  height: 100vh; 
+  border-radius: 170px 0 0px 250px;
+  left: 79%;
   cursor: default;
   position: relative;
-  left: 79%;
 }
 
 .button-text {
   opacity: 1;
   transition: opacity 0.3s ease;
+  
 }
 
 .book-now-container.expanded .button-text {
@@ -85,7 +92,7 @@
 
 .form-content {
   opacity: 0;
-  transition: opacity 0.3s ease 0.5s, transform 0.5s ease;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -94,9 +101,14 @@
   transform: scale(0.95);
   padding: 15px;
   box-sizing: border-box;
-  overflow: auto;
+  overflow: hidden;
   position: relative;
-}
+  bottom:15%;
+  right: 28%;
+  width: 300px;
+
+
+} 
 
 .book-now-container.expanded .form-content {
   opacity: 1;
@@ -107,10 +119,15 @@
 .close-button {
   background: none;
   border: none;
-  color: white;
-  font-size: 24px;
-  align-self: flex-end;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  position: relative;
   cursor: pointer;
+  top: 200px;
+  left: 100px;  
+}
+.close-button:hover{
+  text-shadow: -1px -3px 17px rgb(255, 255, 255);
 }
 
 form {
@@ -122,13 +139,15 @@ label {
   margin-bottom: 10px;
   color: rgb(255, 250, 250);
   font-size: 14px;
+  font-weight: lighter;
 }
 
 input, select {
   padding: 10px;
   margin-top: 5px;
   border-radius: 5px;
-  border: 1px solid transparent;
+  border: 1px solid black;
+
 }
 
 select {
@@ -164,6 +183,9 @@ input:focus, select:focus {
 .check-availability-button {
   background-color: #849FB2;
   color: white;
+}
+.room-in{
+  border: 1px solid black;
 }
 
 label input {
