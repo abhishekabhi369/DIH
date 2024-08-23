@@ -14,7 +14,10 @@ function Home() {
   const handleButtonClick = () => {
     setIsExpanded(!isExpanded);
   };
-
+ const handleClick=(e)=>{
+  e.preventDefault();
+  window.open('https://reservations.dubaiintlhotels.com/73455', '_blank');
+ }
   return (
     <div className="home">
      <video autoPlay muted loop className="background-video" key={videoSrc}>
@@ -25,10 +28,28 @@ function Home() {
 
       <nav className="navbar">
         <ul className="nav-links">
+        <li>
+            <a
+              className='link'
+              href="#home"
+              onClick={(e) => handleMenuClick('media/navvedio.mp4', e)}
+            >
+              Home
+            </a>
+          </li>
           <li>
             <a
               className='link'
               href="#room"
+              onClick={(e) => handleMenuClick('media/room.mp4', e)}
+            >
+              Room
+            </a>
+          </li>
+          <li>
+            <a
+              className='link'
+              href="#bar"
               onClick={(e) => handleMenuClick('media/oregans.mp4', e)}
             >
               Restaurants & Bars
@@ -76,30 +97,31 @@ function Home() {
             <div className="form-content">
               <button className="close-button" onClick={handleButtonClick}>×</button>
               <form>
-                <select>
-                  <option>Dubai International Hotel</option>
-                </select>
-                <label>
-                  Check-in
-                  <input type="date" />
+              <label >
+                  <span style={{marginRight:"10px"}}>Email</span>
+                  <input type="email" style={{paddingRight:"4em"}} placeholder='Enter Your Mail' />
+                </label>
+                <label >
+                  <span style={{marginRight:"10px"}}>Check-in</span>
+                  <input type="date" style={{paddingRight:"5.2em",paddingLeft:".8em"}}/>
                 </label>
                 <label>
-                  Nights
-                  <input type="number" min="1" defaultValue="1" />
+                  <span style={{marginRight:"10px"}}>Nights</span>
+                  <input type="number" min="1" defaultValue="1" style={{paddingRight:"3.5em"}}/>
                 </label>
                 <div className="room-section">
-                  <h4>Room 1</h4>
+                  <h5>Room 1</h5>
                   <label style={{ color: 'black' }}>
                     Adult <span style={{ color: 'black' }}>13 + years</span>
                     <input className='room-in' type="number" min="1" defaultValue="1" style={{ color: 'black' }} />
                   </label>
                   <select className='room-in' style={{ color: 'black' }}>
                     <option >Add a child</option>
-                    {/* Add options for children */}
+
                   </select>
                 </div>
                 <button className="add-room-button">+ Add Another Room</button>
-                <button className="check-availability-button">Check Availability</button>
+              <button className="check-availability-button"  onClick={handleClick} >Check Availability</button>
               </form>
             </div>
           )}

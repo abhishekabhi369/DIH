@@ -19,7 +19,7 @@
 .navbar {
   position: absolute;
   top: 5%;
-  left: 50%;
+  left: 45%;
   transform: translateX(-50%);
   width: max-content;
   z-index: 1;
@@ -147,7 +147,11 @@ input, select {
   margin-top: 5px;
   border-radius: 5px;
   border: 1px solid black;
+  color: white;
 
+}
+input::placeholder{
+  color: white;
 }
 
 select {
@@ -167,7 +171,9 @@ input:focus, select:focus {
   border-radius: 10px;
   color: black;
 }
-
+ h1{
+  font-weight: lighter;
+}
 .add-room-button, .check-availability-button {
   padding: 10px;
   margin-top: 10px;
