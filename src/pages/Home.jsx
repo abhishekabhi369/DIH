@@ -1,23 +1,22 @@
 import React, { useState } from 'react';
 import './Home.css';
+import Rooms from './Rooms';
 
 function Home() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [videoSrc, setVideoSrc] = useState('media/navvedio.mp4'); // Default video source
+
+  const [videoSrc, setVideoSrc] = useState('media/navvedio.mp4');
 
   const handleMenuClick = (src, e) => {
-    e.preventDefault(); // Prevent default anchor behavior
-    setVideoSrc(src);  // Update video source
+    e.preventDefault();
+    setVideoSrc(src);  
     console.log('Video Source Changed To:', src);
   };
 
   const handleButtonClick = () => {
     setIsExpanded(!isExpanded);
   };
- const handleClick=(e)=>{
-  e.preventDefault();
-  window.open('https://reservations.dubaiintlhotels.com/73455', '_blank');
- }
+
   return (
     <div className="home">
      <video autoPlay muted loop className="background-video" key={videoSrc}>
@@ -96,33 +95,7 @@ function Home() {
           {isExpanded && (
             <div className="form-content">
               <button className="close-button" onClick={handleButtonClick}>×</button>
-              <form>
-              <label >
-                  <span style={{marginRight:"10px"}}>Email</span>
-                  <input type="email" style={{paddingRight:"4em"}} placeholder='Enter Your Mail' />
-                </label>
-                <label >
-                  <span style={{marginRight:"10px"}}>Check-in</span>
-                  <input type="date" style={{paddingRight:"5.2em",paddingLeft:".8em"}}/>
-                </label>
-                <label>
-                  <span style={{marginRight:"10px"}}>Nights</span>
-                  <input type="number" min="1" defaultValue="1" style={{paddingRight:"3.5em"}}/>
-                </label>
-                <div className="room-section">
-                  <h5>Room 1</h5>
-                  <label style={{ color: 'black' }}>
-                    Adult <span style={{ color: 'black' }}>13 + years</span>
-                    <input className='room-in' type="number" min="1" defaultValue="1" style={{ color: 'black' }} />
-                  </label>
-                  <select className='room-in' style={{ color: 'black' }}>
-                    <option >Add a child</option>
-
-                  </select>
-                </div>
-                <button className="add-room-button">+ Add Another Room</button>
-              <button className="check-availability-button"  onClick={handleClick} >Check Availability</button>
-              </form>
+              <Rooms/>
             </div>
           )}
         </div>

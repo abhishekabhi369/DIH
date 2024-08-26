@@ -123,13 +123,18 @@
   font-size: 30px;
   position: relative;
   cursor: pointer;
-  top: 200px;
-  left: 100px;  
+  top: 100px;
+  left: 120px;  
 }
 .close-button:hover{
   text-shadow: -1px -3px 17px rgb(255, 255, 255);
 }
-
+.item-select{
+  position: relative;
+  top: 7%;
+  left: .5em;
+  background-color: #486A9E;
+}
 form {
   display: flex;
   flex-direction: column;
@@ -189,9 +194,6 @@ input:focus, select:focus {
 .check-availability-button {
   background-color: #849FB2;
   color: white;
-}
-.room-in{
-  border: 1px solid black;
 }
 
 label input {
