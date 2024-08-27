@@ -72,10 +72,10 @@
 }
 
 .book-now-container.expanded {
-  width: 50%; 
+  width: 80%; 
   height: 100vh; 
-  border-radius: 170px 0 0px 250px;
-  left: 79%;
+  border-radius: 170px 0 0px 170px;
+  left: 75%;
   cursor: default;
   position: relative;
 }
@@ -92,7 +92,6 @@
 
 .form-content {
   opacity: 0;
-  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -103,9 +102,9 @@
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
-  bottom:15%;
-  right: 28%;
-  width: 300px;
+  bottom:10%;
+  right: 33%;
+  width: 320px;
 
 
 } 

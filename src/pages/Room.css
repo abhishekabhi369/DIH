@@ -1,8 +1,61 @@
-.swiper-button-next {
-    color: #420a0a;
-    border-radius: 50%; /* Optional: style the button */
-  }
+.mySwiper .swiper-button-next {
+  color: #ffffff !important; /* Use !important to override */
+  width: 20px;
+ 
+}
+
+.mySwiper .swiper-button-prev {
+  color: rgb(255, 255, 255) !important; /* Use !important to override */
+  width: 20px;
+
+}
+.mySwiper .swiper-button-next,
+.mySwiper .swiper-button-prev {
+    top: 50%;
+    transform: translateY(-300%);
+}
+.mySwiper {
+  --swiper-navigation-size: 30px; 
+} 
+.rooom-name{
+  font-size: small;
+  width: 75%;
+}
+.cardbody-div .price1{
+  font-size: 15px;
+  font-weight: 400;
+}
+.cardbody-div .price2 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.cardbody-a{
+  color: black;
+  text-decoration: none;
+}
+.body-para{
+  font-size: 15px;
   
-.swiper-button-prev{
-    color: black;
+  
+}
+.details-container {
+  max-height: 100px;
+  overflow-y: auto;
+  text-align: justify;
+ 
+
+}
+.details-container p {
+  margin: 0;
+  padding: 0;
+  color: #333; /* Adjust color as needed */
+display: flex;
+  width: 85%;
+
+}
+
+.cardbody-a {
+  display: inline-flex;
+  align-items: center;
+  color: #007bff; /* Adjust color as needed */
 }

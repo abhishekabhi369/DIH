@@ -6,6 +6,8 @@ function Home() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const [videoSrc, setVideoSrc] = useState('media/navvedio.mp4');
+  const [buttonPosition, setButtonPosition] = useState({ top: '100px', left: '120px' });
+
 
   const handleMenuClick = (src, e) => {
     e.preventDefault();
@@ -15,6 +17,9 @@ function Home() {
 
   const handleButtonClick = () => {
     setIsExpanded(!isExpanded);
+  };
+  const updateButtonPosition = (top, right) => {
+    setButtonPosition({ top, right });
   };
 
   return (
@@ -27,15 +32,7 @@ function Home() {
 
       <nav className="navbar">
         <ul className="nav-links">
-        <li>
-            <a
-              className='link'
-              href="#home"
-              onClick={(e) => handleMenuClick('media/navvedio.mp4', e)}
-            >
-              Home
-            </a>
-          </li>
+      
           <li>
             <a
               className='link'
@@ -94,8 +91,8 @@ function Home() {
           )}
           {isExpanded && (
             <div className="form-content">
-              <button className="close-button" onClick={handleButtonClick}>×</button>
-              <Rooms/>
+              <button className="close-button" onClick={handleButtonClick}  style={{ top: buttonPosition.top, right: buttonPosition.right }}>×</button>
+              <Rooms updateButtonPosition={updateButtonPosition} />
             </div>
           )}
         </div>
