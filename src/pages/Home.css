@@ -19,7 +19,7 @@
 .navbar {
   position: absolute;
   top: 5%;
-  left: 45%;
+  left: 36%;
   transform: translateX(-50%);
   width: max-content;
   z-index: 1;

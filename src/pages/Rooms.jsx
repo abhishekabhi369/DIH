@@ -20,7 +20,7 @@ function Rooms({ updateButtonPosition }) {
   const toggleDetails = (index) => {
     if (expandedSlide === index) {
       setExpandedSlide(null);
-      updateButtonPosition('100px','') 
+      updateButtonPosition('0px','') 
 
     } else {
       setExpandedSlide(index); 
