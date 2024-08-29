@@ -1,0 +1,22 @@
+.left-side{
+    position: absolute;
+    top: 25%;
+    left: 0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    width: 80px;
+    height: 50%;
+    border-radius: 0px 175px 175px 0px;
+  
+    
+    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+    overflow: hidden; /* Ensures content does not overflow */
+}
+.left-side p{
+    writing-mode: vertical-rl;
+    position: relative;
+    top: 40%;
+ 
+}

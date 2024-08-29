@@ -19,7 +19,7 @@
 .navbar {
   position: absolute;
   top: 5%;
-  left: 36%;
+  left: 45%;
   transform: translateX(-50%);
   width: max-content;
   z-index: 1;
@@ -53,11 +53,12 @@
 }
 
 .book-now-container {
-  background-color: #486A9E;
+  /* background-color: #486A9E; */
+  background-color: #212a69;
   color: white;
   border: none;
   border-radius: 0 0 150px 500px;
-  width: 190px;
+  width: 200px;
   height: 140px;
   font-size: 16px;
   display: flex;
@@ -97,7 +98,7 @@
   justify-content: space-between;
   height: 100%;
   pointer-events: none;
-  transform: scale(0.95);
+  transform: scale(0.95);  
   padding: 15px;
   box-sizing: border-box;
   overflow: hidden;

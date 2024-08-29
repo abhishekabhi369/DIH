@@ -1,25 +1,7 @@
-.mySwiper .swiper-button-next {
-  color: #ffffff !important; /* Use !important to override */
-  width: 20px;
- 
-}
 
-.mySwiper .swiper-button-prev {
-  color: rgb(255, 255, 255) !important; /* Use !important to override */
-  width: 20px;
-
-}
-.mySwiper .swiper-button-next,
-.mySwiper .swiper-button-prev {
-    top: 50%;
-    transform: translateY(-300%);
-}
-.mySwiper {
-  --swiper-navigation-size: 30px; 
-} 
 .rooom-name{
-  font-size: small;
-  width: 75%;
+  font-size: large;
+  
 }
 .cardbody-div .price1{
   font-size: 15px;
@@ -48,14 +30,30 @@
 .details-container p {
   margin: 0;
   padding: 0;
-  color: #333; /* Adjust color as needed */
+  color: #333; 
 display: flex;
   width: 85%;
 
 }
 
-.cardbody-a {
+.details-container .cardbody-a {
   display: inline-flex;
   align-items: center;
-  color: #007bff; /* Adjust color as needed */
+  color: #007bff; 
+  position: relative;
+  left: 40%;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  position: relative;
+  bottom: 20%;
+  }
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #deff24; /* Change this color to your desired color */
+  width: 30px;  /* You can adjust the size as well */
+  height: 30px;
+  border-radius: 50%; /* If you want rounded buttons */
+}
+

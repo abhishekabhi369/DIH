@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Home.css';
 import Rooms from './Rooms';
+import Left from './Left';
 
 function Home() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -23,6 +24,7 @@ function Home() {
   };
 
   return (
+    <div>
     <div className="home">
      <video autoPlay muted loop className="background-video" key={videoSrc}>
   <source src={videoSrc} type="video/mp4" />
@@ -97,6 +99,9 @@ function Home() {
           )}
         </div>
       </div>
+     
+    </div>
+    <Left/>
     </div>
   );
 }
