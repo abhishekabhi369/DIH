@@ -1,4 +1,6 @@
-
+.body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .home {
   position: relative;
   height: 100vh;
@@ -45,17 +47,20 @@
 
   /* text-shadow: 3px -3px 11px rgba(255, 255, 255, 0.829); */
   cursor: pointer;
+  font-weight: 600;
+  letter-spacing: .5px;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
 .nav-links a:hover{
-  color: black;
+  color:#141e65;
   text-shadow: -1px -3px 17px rgba(255, 255, 255, 0.705);
 }
 
 .book-now-container {
   /* background-color: #486A9E; */
-  background-color: #212a69;
-  color: white;
+  background-color: #141e65;
+  color: #fefaef;
   border: none;
   border-radius: 0 0 150px 500px;
   width: 200px;
@@ -103,7 +108,7 @@
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
-  bottom:10%;
+  bottom:9%;
   right: 33%;
   width: 320px;
 
@@ -116,7 +121,7 @@
   transform: scale(1);
 }
 
-.close-button {
+.close-button{
   background: none;
   border: none;
   color: rgb(255, 255, 255);
@@ -156,7 +161,8 @@ input, select {
 
 }
 input::placeholder{
-  color: white;
+  color: rgb(145, 145, 145);
+
 }
 
 select {
@@ -287,4 +293,31 @@ label input:focus {
       width: 220px;
       height: 300px;
   }
+}
+.button-color1{
+  position: absolute;
+  left: 50%;
+  z-index: 99;
+  bottom: 0;
+
+}
+.button-color2{
+  position: absolute;
+  left: 55%;
+  z-index: 99;
+  bottom: 0;
+
+}
+.button-color3{
+  position: absolute;
+  left: 60%;
+  z-index: 99;
+  bottom: 0;
+
+}
+.button-color4{
+  position: absolute;
+  left: 65%;
+  z-index: 99;
+  bottom: 0;
 }

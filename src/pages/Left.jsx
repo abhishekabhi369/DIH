@@ -1,30 +1,30 @@
-import React, { useState } from 'react';
-import './Left.css';
-import LeftSlide from './LeftSlide';
-
-function Left() {
-  const [showSlide, setShowSlide] = useState(false);
-
-  const handleClick = () => {
-    setShowSlide(true);
+import React, { useState } from 'react'
+import LeftSlide from './LeftSlide'
+import './Left.css'
+function Left({styles}) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const handleButtonClick = () => {
+    setIsExpanded(!isExpanded);
   };
-
-  const handleClose = () => {
-    setShowSlide(false);
-  };
-
+ 
   return (
-    <div>
-      
-      {!showSlide && (
-        <div className='left-side' onClick={handleClick}>
-          <p>Features</p>
+   
+      <div
+          className={`book-now-containers ${isExpanded ? 'expandeds' : ''}`}
+          onClick={!isExpanded ? handleButtonClick : null}
+          style={{...styles}} >
+          {!isExpanded && (
+            <span className="button-texts" style={{fontWeight:"600"}}>FEATURES</span>
+          )}
+          {isExpanded && (
+            <div className="form-contents" onClick={handleButtonClick}>
+
+              <LeftSlide/>
+            </div>
+          )}
         </div>
-      )}
-      {/* Conditionally render LeftSlide with a close handler */}
-      {showSlide && <LeftSlide onClose={handleClose} />}
-    </div>
-  );
+
+  )
 }
 
-export default Left;
+export default Left

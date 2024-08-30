@@ -1,12 +1,11 @@
 import React from 'react';
-import './Left.css';
+import './LeftSlide.css'
 
-function LeftSlide({ onClose }) {
+function LeftSlide(){
   return (
     <div className='left-slide-content'>
-      <button onClick={onClose}>Close</button>
-      <p style={{ backgroundColor: 'black', width: '50%' }}>
-        Located in the Heart of Dubai Airport <br />
+      <p >
+        Located in the Heart of Dubai Airport. <br />
         Hotel rooms available in all three concourses of Terminal 3. <br />
         Equipped with modern traveler amenities, including high-speed Wi-Fi, coffee/tea machine, and more. <br />
         Access to a Health club and Spa facilities. <br />

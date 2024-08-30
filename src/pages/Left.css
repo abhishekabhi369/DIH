@@ -1,4 +1,4 @@
-.left-side{
+/* .left-side{
     position: absolute;
     top: 25%;
     left: 0;
@@ -12,11 +12,82 @@
   
     
     transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
-    overflow: hidden; /* Ensures content does not overflow */
-}
+    overflow: hidden; 
 .left-side p{
     writing-mode: vertical-rl;
     position: relative;
     top: 40%;
  
-}
+} */
+
+
+.book-now-containers {
+    background-color: #141e65 ;
+    color: white;
+    border: none;
+    border-radius: 0px 175px 175px 0px;
+    width: 80px;
+    height: 70%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: justify;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    position: absolute;
+    cursor: pointer;
+    top: 25%;
+    overflow: hidden;
+  }
+  
+  .book-now-containers.expandeds {
+    width: 450px; 
+    border-radius: 0px 150px 150px 0px;
+    cursor: default;
+    position: absolute;
+  }
+  
+  .button-texts{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    writing-mode:vertical-rl;
+    text-orientation: upright;
+    font-weight: 600;
+    
+    }
+  
+  .book-now-containers.expandeds .button-texts {
+    opacity: 0;
+  }
+  
+  .form-contents {
+    
+    display: flex;
+    line-height: 1.3em;
+    justify-content: center;    
+    cursor: pointer;
+    line-height: 1.2em;
+  }
+  
+  .book-now-containers.expandeds.form-contents{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+  }
+  
+  .close-buttons{
+    background: none;
+    border: none;
+    color:#fefaef;
+    font-size: 30px;
+    position: relative;
+    left: 80%;
+    top: 0;
+    
+ 
+  }
+  .close-buttons:hover{
+    text-shadow: -1px -3px 17px rgb(255, 0, 0);
+  }
