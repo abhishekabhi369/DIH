@@ -6,12 +6,12 @@ import Button from 'react-bootstrap/esm/Button';
 
 function Home() {
   const [isExpanded, setIsExpanded] = useState(false);
-
   const [videoSrc, setVideoSrc] = useState('media/navvedio.mp4');
   const [buttonPosition, setButtonPosition] = useState({ top: '70px', left: '120px' });
+  const [isTransparent, setIsTransparent] = useState(false); 
   const [styles, setStyles] = useState({
-    backgroundColor: '#141e65', // Default background color
-    color: '#fefaef' // Default text color
+    backgroundColor: '#141e65', 
+    color: '#fefaef' 
   });
 
   const handleMenuClick = (src, e) => {
@@ -50,6 +50,30 @@ function Home() {
       color: textColor
     });
   };
+  const handleButtonClickColor5 = (bgColor, textColor) => {
+    setStyles({
+      backgroundColor: bgColor,
+      color: textColor
+    });
+  };
+  const handleButtonClickColor6 = (bgColor, textColor) => {
+    setStyles({
+      backgroundColor: bgColor,
+      color: textColor
+    });
+  };
+  const handleButtonClickColor7 = (bgColor, textColor) => {
+    setStyles({
+      backgroundColor: bgColor,
+      color: textColor
+    });
+  };
+  const handleButtonClickColor8 = (bgColor, textColor) => {
+    setStyles({
+      backgroundColor: bgColor,
+      color: textColor
+    });
+  };
   return (
     <div>
     <div className="home">
@@ -57,8 +81,8 @@ function Home() {
   <source src={videoSrc} type="video/mp4" />
   Your browser does not support the video tag.
 </video>
-
-
+      
+<img src="media/trpa.png"  className='png-img' />
       <nav className="navbar">
         <ul className="nav-links">
       
@@ -126,20 +150,23 @@ function Home() {
           )}
           {isExpanded && (
             <div className="form-content" style={{...styles}}>
-              <button className="close-button" onClick={handleButtonClick}  style={{ top: buttonPosition.top, right: buttonPosition.right }}>×</button>
+              <button className="close-button" onClick={handleButtonClick}  style={{ top: buttonPosition.top, right: buttonPosition.right ,color:styles.color}}>×</button>
               <Rooms updateButtonPosition={updateButtonPosition} styles={styles} />
             </div>
           )}
         </div>
       </div>
-     
     </div>
-    <Left styles={styles}/>
+    <Left styles={styles}  isTransparent={isTransparent} setIsTransparent={setIsTransparent} />
+    <Button className='transparent' onClick={() => setIsTransparent(!isTransparent)}>Transparent</Button>
             <Button className='button-color1 '   onClick={() => handleButtonClickColor('#a7956d', 'white')} style={{backgroundColor:"#a7956d",border:"none"}}>Color 1</Button>
             <Button className='button-color2 btn-light'  onClick={() => handleButtonClickColor2('#996b56', '#0b0603')} style={{backgroundColor:"#996b56",border:"none"}}>Color 2</Button>
-           <Button className='btn btn-dark button-color4' onClick={() => handleButtonClickColor4('white', 'black')}  style={{backgroundColor:"black",border:"none"}}>Color3</Button>
+            <Button className='btn btn-dark button-color4' onClick={() => handleButtonClickColor4('#603F83FF', '#C7D3D4FF')}  style={{backgroundColor:"#603F83FF",color:"#C7D3D4FF",border:"none"}}>Color3</Button>
             <Button className='button-color3' onClick={() => handleButtonClickColor3('#141e65', '#fefaef')} style={{backgroundColor:"#141e65",border:"none"}}>Default</Button>
-            
+            <Button className='button-color5' onClick={() => handleButtonClickColor5('#45291e', 'white')} style={{backgroundColor:"#45291e",color:"white",border:"none"}}>Color4</Button>
+            <Button className='button-color6' onClick={() => handleButtonClickColor6('#77a9cc', '#3d240d')} style={{backgroundColor:"#77a9cc",color:"#3d240d",border:"none"}}>Color5</Button>
+            <Button className='button-color7' onClick={() => handleButtonClickColor7('#00203FFF', '#ADEFD1FF')} style={{backgroundColor:"#00203FFF",color:"#ADEFD1FF",border:"none"}}>Color6</Button>
+            <Button className='button-color8' onClick={() => handleButtonClickColor8('#353148', 'rgb(215, 196, 158)')} style={{backgroundColor:"#353148",color:"rgb(215, 196, 158)",border:"none"}}>Color7</Button>
     </div>
   );
 }

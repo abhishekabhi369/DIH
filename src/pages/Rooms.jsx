@@ -26,6 +26,7 @@ function Rooms({styles} ) {
     { name: "SUPERIOR DELUXE ROOM", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/superior_ca_enhanced.jpg", price1: "01 - 03 Hours Stay", price2: "AED 455.00",type: "image" },
     { name: "EXECUTIVE ROOM ", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/executive_cb_enhanced.jpg", price1: "01 - 03 Hours Stay", price2: "AED 508.00",type: "image" },
     { name: "JUNIOR SUITE", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/27_enhanced.jpg", price1: "01 - 03 Hours Stay", price2: "AED 630.00",type: "image" },
+    { name: "JUNIOR SUITE", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/junior_suite_ca_enhanced.jpg", price1: "01 - 03 Hours Stay", price2: "AED 630.00",type: "image" },
     { name: "FAMILY ROOM", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/family_room_enhanced.jpg", price1: "01 - 03 Hours Stay", price2: "AED 630.00" ,type: "image"},
     { name: "ROYAL SUITE", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/royal_suite_cb_enhanced.jpg", price1: "01 - 03 Hours Stay", price2: "AED 4200.00",type: "image" }
   ];
@@ -59,7 +60,6 @@ function Rooms({styles} ) {
                     </div>
                     <div className="details-container">
                       <a href="#!" onClick={() => handleShow(display)} className="cardbody-a">
-                        {/* <CiCircleChevUp size={20} /> */}
                         <TiExportOutline size={25}/>
                       </a>
                     </div>

@@ -1,6 +1,6 @@
 
 .rooom-name{
-  font-size: large;
+  font-size: 16px;
   font-weight: 600;
   
 }
@@ -55,9 +55,16 @@ display: flex;
   background-color: #deff24; /* Change this color to your desired color */
   width: 30px;  /* You can adjust the size as well */
   height: 30px;
-  border-radius: 50%; /* If you want rounded buttons */
+  
+}
+.carousel-control-prev-icon{
+  background-image: url(https://banner2.cleanpng.com/20180409/iyq/avg7xzbyj.webp);
+}
+.carousel-control-next-icon{
+  background-image: url(https://banner2.cleanpng.com/20190616/fxy/kisspng-arrow-vector-graphics-clip-art-portable-network-gr-direita-png-1713886554463.webp);
 }
 
+/*  */
 ::placeholder{
   opacity: .5;
 }

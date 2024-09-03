@@ -45,7 +45,6 @@
   color: rgba(255, 255, 255, 0.801);
   font-size: 30px;
 
-  /* text-shadow: 3px -3px 11px rgba(255, 255, 255, 0.829); */
   cursor: pointer;
   font-weight: 600;
   letter-spacing: .5px;
@@ -89,6 +88,8 @@
 .button-text {
   opacity: 1;
   transition: opacity 0.3s ease;
+  font-weight: 600;
+
   
 }
 
@@ -111,6 +112,7 @@
   bottom:9%;
   right: 33%;
   width: 320px;
+ 
 
 
 } 
@@ -296,28 +298,72 @@ label input:focus {
 }
 .button-color1{
   position: absolute;
-  left: 50%;
+  left: 35%;
   z-index: 99;
   bottom: 0;
 
 }
 .button-color2{
   position: absolute;
-  left: 55%;
+  left: 40%;
   z-index: 99;
   bottom: 0;
 
 }
 .button-color3{
   position: absolute;
-  left: 60%;
+  left: 45%;
   z-index: 99;
   bottom: 0;
 
 }
 .button-color4{
   position: absolute;
+  left: 50%;
+  z-index: 99;
+  bottom: 0;
+}
+.button-color5{
+  position: absolute;
+  left: 55%;
+  z-index: 99;
+  bottom: 0;
+}
+.button-color6{
+  position: absolute;
+  left: 60%;
+  z-index: 99;
+  bottom: 0;
+}
+.button-color7{
+  position: absolute;
   left: 65%;
   z-index: 99;
   bottom: 0;
+}
+.button-color8{
+  position: absolute;
+  left: 70%;
+  z-index: 99;
+  bottom: 0;
+}
+.button-color9{
+  position: absolute;
+  left: 75%;
+  z-index: 99;
+  bottom: 0;
+}
+
+.png-img{
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  width: 20em;
+}
+.transparent{
+  position: absolute;
+  left: 28%;
+  z-index: 99;
+  bottom: 0;
+
 }
