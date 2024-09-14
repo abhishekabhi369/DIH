@@ -3,7 +3,7 @@ import LeftSlide from './LeftSlide';
 import './Left.css';
 
 
-function Left({ styles, isTransparent }) {
+function Left() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleButtonClick = () => {
@@ -14,19 +14,16 @@ function Left({ styles, isTransparent }) {
     <div
       className={`book-now-containers ${isExpanded ? 'expandeds' : ''}`}
       onClick={!isExpanded ? handleButtonClick : null}
-      style={{
-        ...styles,
-        backgroundColor: isTransparent ? 'rgba(20, 30, 101, 0.5)' : styles.backgroundColor,
-      }}
+      style={{backgroundColor:"rgba(96, 63, 131,.8)"}}
     >
-      {!isExpanded && (
+      {!isExpanded && ( 
         <span className="button-texts" style={{ fontWeight: "600" }}>FEATURES</span>
       )}
       {isExpanded && (
-        <div className="form-contents">
+        <div className="form-contents" >
           <button className="close-buttons" onClick={handleButtonClick}>×</button>
-          <div className="left-slide-container" style={{ backgroundColor: 'transparent' }}>
-            <LeftSlide styles={styles}  />
+          <div className="left-slide-container" >
+            <LeftSlide />
           </div>
         </div>
       )}

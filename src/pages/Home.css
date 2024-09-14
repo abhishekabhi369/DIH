@@ -52,13 +52,13 @@
 
 }
 .nav-links a:hover{
-  color:#141e65;
+  color:rgb(25, 24, 27);
   text-shadow: -1px -3px 17px rgba(255, 255, 255, 0.705);
 }
 
 .book-now-container {
   /* background-color: #486A9E; */
-  background-color: #141e65;
+  background-color: #603F83FF;
   color: #fefaef;
   border: none;
   border-radius: 0 0 150px 500px;
@@ -356,9 +356,11 @@ label input:focus {
 
 .png-img{
   position: absolute;
-  left: 40%;
-  top: 30%;
-  width: 20em;
+ 
+  left: 85%;
+ bottom: 0;
+ 
+  width: 5em;
 }
 .transparent{
   position: absolute;

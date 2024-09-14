@@ -3,9 +3,9 @@ import './LeftSlide.css'
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
-function LeftSlide({isTransparent, setIsTransparent}) {
+function LeftSlide() {
   const features = [
-    { points: "Located in the Heart of Dubai Airport", img: "images/1.jpg" },
+    { points: "Located in the Heart of Dubai Airport.", img: "images/1.jpg" },
     { points: "Hotel rooms available in all three concourses of Terminal 3.", img: "images/2.jpg" },
     { points: "Equipped with modern traveler amenities,free Wi-Fi, coffee/tea machine,and more.", img: "images/3.jpg" },
     { points: "Access to a Health club and Spa facilities.", img: "images/4.jpg" },
@@ -13,7 +13,7 @@ function LeftSlide({isTransparent, setIsTransparent}) {
     { points: "Conveniently located near departure gates and Dubai Duty Free.", img: "images/8.jpg" },
     { points: "Ahlan Meet & Greet team available to make your journey easier.", img: "images/9.jpg" },
     { points: "Flexible hourly rates.", img: "images/10.jpg" },
-    { points: "24-hour check-in/check-out", img: "images/10.jpg" },
+    { points: "24-hour check-in/check-out.", img: "images/10.jpg" },
     { points: "No immigration formalities.", img: "images/10.jpg" },
     { points: "No visa requirement.", img: "images/10.jpg" }
   ];
@@ -30,7 +30,7 @@ function LeftSlide({isTransparent, setIsTransparent}) {
   };
 
   return (
-    <div className='left-slide-content' style={{ opacity: isTransparent ? 1 : 1, }}>
+    <div className='left-slide-content' >
       <ul>
         {features.map((feature, key) => (
           <li 
@@ -43,12 +43,12 @@ function LeftSlide({isTransparent, setIsTransparent}) {
         ))}
       </ul>
 
-      <Modal show={show} onHide={handleClose} >
-        <Modal.Body>
-          <img src={selectedImage} alt="" width={"100%"} height={"400px"} style={{objectFit:"cover"}}/>
+      <Modal show={show} onHide={handleClose} dialogClassName="custom-modal"  size='lg'>
+        <Modal.Body className="custom-modal-body">
+          <img src={selectedImage} alt="" width={"100%"} height={"500px"} style={{objectFit:"cover"}}/>
          
         </Modal.Body>
-        <Modal.Footer >
+        <Modal.Footer className="custom-modal-footer">
         <h6 className='slide-text'>{setText}</h6>
           <Button variant="secondary" onClick={handleClose}>
             Close

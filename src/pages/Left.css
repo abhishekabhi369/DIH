@@ -22,7 +22,7 @@
 
 
 .book-now-containers {
-    background-color: #141e65 ;
+    background-color: #603F83FF ;
     color: white;
     border: none;
     border-radius: 0px 175px 175px 0px;
@@ -40,6 +40,7 @@
     cursor: pointer;
     top: 15%;
     overflow: hidden;
+    
   }
   
   .book-now-containers.expandeds {
