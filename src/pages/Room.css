@@ -52,13 +52,7 @@ display: flex;
   position: relative;
   bottom: 20%;
   }
-  .carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #deff24; /* Change this color to your desired color */
-  width: 30px;  /* You can adjust the size as well */
-  height: 30px;
-  
-}
+
 .carousel-control-prev-icon{
   background-image: url(https://banner2.cleanpng.com/20180409/iyq/avg7xzbyj.webp);
 }
@@ -75,4 +69,10 @@ label{
 }
 .check-availability-button:hover{
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.img-modal{
+  border: none;
+}
+.image-carousal{
+  width: 800px;
 }

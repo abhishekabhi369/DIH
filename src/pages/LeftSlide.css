@@ -1,5 +1,5 @@
 .left-slide-content{
-    width: 80%;
+    
     font-weight: 400;
     line-height: 3.2em;
     font-size: 16px;
@@ -8,10 +8,7 @@
 }
 
 
-.left-slide-content {
-    position: relative;
-  }
-  
+
   .left-slide-content-list {
     cursor: pointer;
 
@@ -46,7 +43,7 @@
   .custom-modal .modal-content {
     background-color: #603F83FF;
     /* background-color: transparent; */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border: none;
   }
   
@@ -57,4 +54,19 @@
   }
   .modal-backdrop.show {
     background-color: rgba(0, 0, 0, 0.8); /* Darker overlay background */
+  }
+  .Left-main h5{
+  
+    margin-bottom: 2em;
+    padding-right: 1em;
+    color: rgb(255, 209, 124);
+  }
+  .Left-main {
+  
+   position: absolute;
+   top: 10%;
+   left: 2%;
+   margin-left: 10%;
+   margin-right: 22%;
+
   }

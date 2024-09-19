@@ -38,73 +38,79 @@ function Rooms({ styles }) {
   const rooms = [
     {
       name: "DELUXE DOUBLE ROOM",
-      img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/deluxe_cb_enhanced.jpg",
+      img: "images/room.jpg",
       images: [
-        "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/3_enhanced.jpg",
+        "images/room.jpg",
         "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/2a_enhanced.jpg",
-        "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/1_enhanced.jpg"
+        ,"https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg",
+        "images/room.jpg",
+        "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg",
+
       ],
       prices: {
-        "Advance Purchase - 24 Hours Stay": "977.50 AED",
-        "01 - 03 Hours Stay": "403 AED",
-        "04 - 06 Hours Stay": "690 AED",
-        "07 - 12 Hours Stay": "805 AED",
-        "13 - 18 Hours Stay": "977.50 AED",
-        "19 to 24 Hours Stay": "1150 AED"
+        "Advance Purchase - 24 Hours Stay": " AED 977.50 ",
+        "01 - 03 Hours Stay": " AED 403 ",
+        "04 - 06 Hours Stay": " AED 690 ",
+        "07 - 12 Hours Stay": " AED 805 ",
+        "13 - 18 Hours Stay": "AED 977.50 ",
+        "19 to 24 Hours Stay": "AED 1150 "
       },
       type: "slideshow"
     },
     {
       name: "DELUXE TWIN ROOM",
-      img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/deluxe_twin_cb_enhanced.jpg",
+      img: "images/room.jpg",
       images: [
-        "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/23_enhanced.jpg",
+        "images/room.jpg",
+        "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg",
         "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/2a_enhanced.jpg",
-        "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/1_enhanced.jpg"
+        "images/room.jpg",
+        "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg"
       ],
       prices: {
-        "Advance Purchase - 24 Hours Stay": "977.50 AED",
-        "01 - 03 Hours Stay": "403 AED",
-        "04 - 06 Hours Stay": "690 AED",
-        "07 - 12 Hours Stay": "805 AED",
-        "13 - 18 Hours Stay": "977.50 AED",
-        "19 to 24 Hours Stay": "1150 AED"
+        "Advance Purchase - 24 Hours Stay": "AED 977.50 ",
+        "01 - 03 Hours Stay": "AED 403 ",
+        "04 - 06 Hours Stay": "AED 690 ",
+        "07 - 12 Hours Stay": "AED 805 ",
+        "13 - 18 Hours Stay": "AED 977.50 ",
+        "19 to 24 Hours Stay": " AED 1150 "
       },
       type: "slideshow"
     },
-    { name: "SUPERIOR DELUXE ROOM", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/superior_ca_enhanced.jpg", images: ["https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/19_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/21_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/20_enhanced.jpg"],
+    { name: "SUPERIOR DELUXE ROOM", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/superior_ca_enhanced.jpg", images: ["https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/19_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg","https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/21_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/20_enhanced.jpg","https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg"],
       prices: {
-        "Advance Purchase - 24 Hours Stay": "1062.50 AED",
-        "01 - 03 Hours Stay": "438 AED",
-        "04 - 06 Hours Stay": "750 AED",
-        "07 - 12 Hours Stay": "875 AED",
-        "13 - 18 Hours Stay": "1062.50 AED",
-        "19 to 24 Hours Stay": "1250 AED"
+        "Advance Purchase - 24 Hours Stay": "AED 1062.50 ",
+        "01 - 03 Hours Stay": "AED 438 ",
+        "04 - 06 Hours Stay": " AED 750 ",
+        "07 - 12 Hours Stay": "AED 875 ",
+        "13 - 18 Hours Stay": "AED 1062.50 ",
+        "19 to 24 Hours Stay": "AED 1250 "
       }, type: "slideshow" },
-    { name: "EXECUTIVE ROOM ", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/executive_cb_enhanced.jpg", images: ["https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/9_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/8_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg"],  prices: {
-      "Advance Purchase - 24 Hours Stay": "1190.50 AED",
-      "01 - 03 Hours Stay": "490 AED",
-      "04 - 06 Hours Stay": "840 AED",
-      "07 - 12 Hours Stay": "980 AED",
-      "13 - 18 Hours Stay": "1190 AED",
-      "19 to 24 Hours Stay": "1400 AED"
+    { name: "EXECUTIVE ROOM ", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/executive_cb_enhanced.jpg", images: ["https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/9_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/8_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg","https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg"],  prices: {
+      "Advance Purchase - 24 Hours Stay": "AED 1190.50 ",
+      "01 - 03 Hours Stay": "AED 490 ",
+      "04 - 06 Hours Stay": "AED 840 ",
+      "07 - 12 Hours Stay": "AED 980 ",
+      "13 - 18 Hours Stay": "AED 1190 ",
+      "19 to 24 Hours Stay": "AED 1400 "
     }, type: "slideshow" },
-    { name: "JUNIOR SUITE", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/junior_suite_cb_enhanced.jpg", images: ["https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/25_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/26_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/27_enhanced.jpg"],  prices: {
+    { name: "JUNIOR SUITE", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/junior_suite_cb_enhanced.jpg", images: ["https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/25_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/26_enhanced.jpg","https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/27_enhanced.jpg","https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg"],  prices: {
       
-      "01 - 03 Hours Stay": "630 AED",
-      "04 - 06 Hours Stay": "1080 AED",
-      "07 - 12 Hours Stay": "1260 AED",
-      "13 - 18 Hours Stay": "1530 AED",
-      "19 to 24 Hours Stay": "1800 AED"
+      "01 - 03 Hours Stay": "AED 630 ",
+      "04 - 06 Hours Stay": "AED 1080 ",
+      "07 - 12 Hours Stay": "AED 1260 ",
+      "13 - 18 Hours Stay":  "AED 1530 ",
+      "19 to 24 Hours Stay": "AED 1800 "
     }, type: "slideshow" },
-    { name: "JUNIOR SUITE", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/junior_suite_ca_enhanced.jpg", images: ["https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/12_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/10_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/11_enhanced.jpg"], prices: {
-      "01 - 03 Hours Stay": "630 AED",
-      "04 - 06 Hours Stay": "1080 AED",
-      "07 - 12 Hours Stay": "1260 AED",
-      "13 - 18 Hours Stay": "1530 AED",
-      "19 to 24 Hours Stay": "1800 AED"
+    { name: "JUNIOR SUITE", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/junior_suite_ca_enhanced.jpg", images: ["https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/12_enhanced.jpg","https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/10_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/11_enhanced.jpg","https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg"], prices: {
+      "01 - 03 Hours Stay": "AED 630 ",
+      "04 - 06 Hours Stay": "AED 1080 ",
+      "07 - 12 Hours Stay": "AED 1260 ",
+      "13 - 18 Hours Stay": "AED 1530 ",
+      "19 to 24 Hours Stay": "AED 1800 "
     }, type: "slideshow" },
-    { name: "FAMILY ROOM", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/family_room_enhanced.jpg", images: ["https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/res_roomimg_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/23_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/24_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/2a_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/1_enhanced.jpg "], 
+    { name: "FAMILY ROOM", img: "images/room.jpg",
+       images: ["images/room.jpg", "images/room.jpg","https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg", "images/room.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/2a_enhanced.jpg", "images/room.jpg","https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg"], 
        prices: { 
       "01 - 03 Hours Stay": "603.75 AED",
       "04 - 06 Hours Stay": "1104 AED",
@@ -112,11 +118,11 @@ function Rooms({ styles }) {
       "13 - 18 Hours Stay": "1661.50 AED",
       "19 to 24 Hours Stay": "1955 AED"
     }, type: "slideshow" },
-    { name: "ROYAL SUITE", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/royal_suite_cb_enhanced.jpg", images: ["https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/13_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/15_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/18_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/17_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/16_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/14_enhanced.jpg"], prices: {
+    { name: "ROYAL SUITE", img: "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/main-image/royal_suite_cb_enhanced.jpg", images: ["https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/13_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/15_enhanced.jpg","https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/7_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/18_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/17_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/16_enhanced.jpg", "https://reservations.dubaiintlhotels.com/assets/hotel/73455/media/room/detail-image/14_enhanced.jpg"], prices: {
       
-      "07 - 12 Hours Stay": "4200 AED",
-      "13 - 18 Hours Stay": "5100 AED",
-      "19 to 24 Hours Stay": "6000 AED"
+      "07 - 12 Hours Stay": "AED 4200 ",
+      "13 - 18 Hours Stay": "AED 5100 ",
+      "19 to 24 Hours Stay": "AED 6000 "
     }, type: "slideshow" }
 
   ];
@@ -172,18 +178,18 @@ function Rooms({ styles }) {
         <button className="check-availability-button" onClick={handleClick} style={{ backgroundColor: styles.color, color: styles.backgroundColor, fontWeight: "600" }}>BOOK NOW</button>
       </form>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={show} onHide={handleClose} dialogClassName="custom-modal" size='lg'>
         {selectedRoom && (
           <>
             <Modal.Header>
-              <Modal.Title>{selectedRoom.name}</Modal.Title>
+              <Modal.Title style={{color:"white "}}>{selectedRoom.name}</Modal.Title>
             </Modal.Header>
-            <Modal.Body>
+            <Modal.Body className="custom-modal-body">
               {selectedRoom.type === 'slideshow' && (
-                <Carousel>
+                <Carousel interval={1000} controls={false} >
                   {selectedRoom.images.map((image, index) => (
-                    <Carousel.Item key={index}>
-                      <img src={image} alt={`Slide ${index + 1}`} width={"800px"} height={"400px"} style={{backgroundSize:"contain"}} />
+                    <Carousel.Item key={index} className='image-carousal' >
+                      <img src={image} alt={`Slide ${index + 1}`}  height={"500px"} style={{objectFit:"cover"}}/>
                     </Carousel.Item>
                   ))}
                 </Carousel>

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Home.css';
 import Rooms from './Rooms';
 import Left from './Left';
+import Button from 'react-bootstrap/esm/Button';
+import Bottom from './Bottom';
 
 
 function Home() {
@@ -9,6 +11,24 @@ function Home() {
   const [png, setpng] = useState(false)
   const [videoSrc, setVideoSrc] = useState('media/navvedio.mp4');
   const [buttonPosition, setButtonPosition] = useState({ top: '70px', left: '120px' }); 
+  const [isTextVisible, setIsTextVisible] = useState(false);
+
+  const fonts = [
+    'Montserrat', 'Helvetica', 'Open Sans', 'Poppins', 'Arial', 'Franklin', 'Proxima Nova'
+  ];
+
+  const taglines = [
+    'Dubai International Hotel located within gateway at Dubai International Airport T3',
+    'Dubai International Hotel - A Safe and Comfortable Hotel at the Airport',
+    'Dubai International Hotel nestled in the Heart of Dubai Airport',
+    'Dubai International Hotel - Right at the DXB Airport',
+    'Dubai International Hotel: Your comfortable and convenient retreat located right inside Dubai Airport.',
+    'Dubai International Hotel: Located in the Heart of Dubai Airport',
+    'The Travelers Retreat at Dubai International Airport T3'
+  ];
+
+  const [currentTaglineIndex, setCurrentTaglineIndex] = useState(0);
+    const [isMainpointVisible, setIsMainpointVisible] = useState(true);
   const [styles, setStyles] = useState({
     backgroundColor: '#141e65', 
     color: '#fefaef' 
@@ -27,54 +47,21 @@ function Home() {
   const updateButtonPosition = (top, right) => {
     setButtonPosition({ top, right });
   };
-  // const handleButtonClickColor = (bgColor, textColor) => {
-  //   setStyles({
-  //     backgroundColor: bgColor,
-  //     color: textColor
-  //   });
-  // };
-  // const handleButtonClickColor2 = (bgColor, textColor) => {
-  //   setStyles({
-  //     backgroundColor: bgColor,
-  //     color: textColor
-  //   });
-  // };
-  // const handleButtonClickColor3 = (bgColor, textColor) => {
-  //   setStyles({
-  //     backgroundColor: bgColor,
-  //     color: textColor
-  //   });
-  // };
-  // const handleButtonClickColor4 = (bgColor, textColor) => {
-  //   setStyles({
-  //     backgroundColor: bgColor,
-  //     color: textColor
-  //   });
-  // };
-  // const handleButtonClickColor5 = (bgColor, textColor) => {
-  //   setStyles({
-  //     backgroundColor: bgColor,
-  //     color: textColor
-  //   });
-  // };
-  // const handleButtonClickColor6 = (bgColor, textColor) => {
-  //   setStyles({
-  //     backgroundColor: bgColor,
-  //     color: textColor
-  //   });
-  // };
-  // const handleButtonClickColor7 = (bgColor, textColor) => {
-  //   setStyles({
-  //     backgroundColor: bgColor,
-  //     color: textColor
-  //   });
-  // };
-  // const handleButtonClickColor8 = (bgColor, textColor) => {
-  //   setStyles({
-  //     backgroundColor: bgColor,
-  //     color: textColor
-  //   });
-  // };
+
+  const handleBottomClick = () => {
+    setIsMainpointVisible(!isMainpointVisible); 
+  };
+  const handleTaglineChange = () => {
+    
+    setCurrentTaglineIndex((prevIndex) => (prevIndex + 1) % taglines.length);
+
+  };
+
+    const handleFontButtonClick = () => {
+      setIsTextVisible(!isTextVisible);
+    };
+
+
   return (
     <div>
     <div className="home">
@@ -105,7 +92,7 @@ function Home() {
               
             >   
              
-              RESTAURANT&BARS
+              RESTAURANT & BARS
             </a>
           </li>
           <li>
@@ -115,7 +102,7 @@ function Home() {
               onClick={(e) => handleMenuClick('media/meet.mp4', e)}
              
             >
-             MEET&ASSISTANCE
+             MEET & ASSIST
             </a>
           </li>
           <li>
@@ -135,12 +122,12 @@ function Home() {
               onClick={(e) => handleMenuClick('media/spa.mp4', e)}
              
             >
-            SPA&WELLNESS
+            SPA & WELLNESS
             </a>
           </li>
         </ul>
       </nav>
-
+     
       <div>
         <div
           className={`book-now-container ${isExpanded ? 'expanded' : ''}`}
@@ -166,16 +153,38 @@ function Home() {
       </div>
       
     </div>
-    <Left/>
-    {/* <Button className='transparent' onClick={() => setIsTransparent(!isTransparent)}>Transparent</Button>
-            <Button className='button-color1 '   onClick={() => handleButtonClickColor('#a7956d', 'white')} style={{backgroundColor:"#a7956d",border:"none"}}>Color 1</Button>
-            <Button className='button-color2 btn-light'  onClick={() => handleButtonClickColor2('#996b56', '#0b0603')} style={{backgroundColor:"#996b56",border:"none"}}>Color 2</Button>
-            <Button className='btn btn-dark button-color4' onClick={() => handleButtonClickColor4('#603F83FF', '#C7D3D4FF')}  style={{backgroundColor:"#603F83FF",color:"#C7D3D4FF",border:"none"}}>Color3</Button>
-            <Button className='button-color3' onClick={() => handleButtonClickColor3('#141e65', '#fefaef')} style={{backgroundColor:"#141e65",border:"none"}}>Default</Button>
-            <Button className='button-color5' onClick={() => handleButtonClickColor5('#45291e', 'white')} style={{backgroundColor:"#45291e",color:"white",border:"none"}}>Color4</Button>
-            <Button className='button-color6' onClick={() => handleButtonClickColor6('#77a9cc', '#3d240d')} style={{backgroundColor:"#77a9cc",color:"#3d240d",border:"none"}}>Color5</Button>
-            <Button className='button-color7' onClick={() => handleButtonClickColor7('#00203FFF', '#ADEFD1FF')} style={{backgroundColor:"#00203FFF",color:"#ADEFD1FF",border:"none"}}>Color6</Button>
-            <Button className='button-color8' onClick={() => handleButtonClickColor8('#353148', 'rgb(215, 196, 158)')} style={{backgroundColor:"#353148",color:"rgb(215, 196, 158)",border:"none"}}>Color7</Button> */}
+    <Left   tagline={taglines[currentTaglineIndex]}/>
+    {isMainpointVisible ?  <div className='mainpoint-div'>
+          <ul>
+            <li>24-hour check-in/check-out.</li>
+            <li>No immigration formalities.</li>
+            <li>No visa requirement.</li>
+          </ul>
+        </div>: <></>}
+
+      <Bottom  onClick={handleBottomClick}/>
+      <Button className='change-tag' onClick={handleTaglineChange}>Change Tag</Button>
+      <Button className='change-tag2' >Change Color</Button>
+      
+     <Button className='font-toggle-button' onClick={handleFontButtonClick}>
+        Toggle Fonts
+      </Button>
+
+
+      {isTextVisible && (
+        <div className='font-text '>
+          {fonts.map((font, index) => (
+            <div className='head-names' key={index} style={{ fontFamily: font, marginBottom: '10px' }}>
+              <div style={{color:"#603F83FF"}}>{font}</div>
+              <p>ROOMS</p>
+              <p>RESTAURANT & BARS</p>
+              <p>MEET & ASSIST</p>
+              <p>LOUNGES</p>
+              <p>SPA & WELLNESS</p>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

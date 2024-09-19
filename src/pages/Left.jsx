@@ -3,7 +3,7 @@ import LeftSlide from './LeftSlide';
 import './Left.css';
 
 
-function Left() {
+function Left({ tagline }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleButtonClick = () => {
@@ -23,7 +23,7 @@ function Left() {
         <div className="form-contents" >
           <button className="close-buttons" onClick={handleButtonClick}>×</button>
           <div className="left-slide-container" >
-            <LeftSlide />
+            <LeftSlide tagline={tagline}  />
           </div>
         </div>
       )}

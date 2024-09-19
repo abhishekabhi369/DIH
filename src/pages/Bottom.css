@@ -1,0 +1,76 @@
+
+
+.book-now-containers1 {
+    background-color: #603F83FF ;
+    color: white;
+    border: none;
+    border-radius: 175px 175px 0px 0px;
+    width: 40%;
+    height: 80px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: justify;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+    position: absolute;
+    cursor: pointer;
+    bottom: 0;
+    left: 30%;
+    overflow: hidden;
+    
+  }
+  
+  .book-now-containers1.expandeds1 {
+    width: 700px; 
+    border-radius: 150px 150px 0px 0px;
+    cursor: default;
+    transform: scale(1);
+    height: 75vh;
+     
+  }
+  
+  .button-texts1{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    font-weight: 600;
+    
+    }
+  
+
+  .form-contents1 {
+    
+    display: flex;
+
+    justify-content: flex-start;
+
+    cursor: pointer;
+    
+    
+  }
+  
+  .book-now-containers1.expandeds1.form-contents1{
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+   
+    
+  }
+  
+  .close-buttons1{
+    background: none;
+    border: none;
+    color:#fefaef;
+    font-size: 30px;
+    position: absolute;
+    left: 2%;
+  top: 10%;
+  
+    
+ 
+  }
+  .close-buttons1:hover{
+    text-shadow: -1px -3px 17px rgb(255, 0, 0);
+  }
