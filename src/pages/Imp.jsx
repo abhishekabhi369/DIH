@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { forwardRef, useRef } from 'react'
 import './Imp.css'
-function Imp() {
+import { FaAnglesUp } from "react-icons/fa6";
+const Imp = forwardRef(({ handletopclick }, ref) => {
+  
   return (
-    <div>
+    <div ref={ref} style={{backgroundColor:"#603F83FF"}}>
      <div className='div-para'>
        <p>If you are flying into Dubai International Airport, Dubai International Hotel is located inside the Airport Terminal Buildings before Passport Control (Immigration and Customs) in only Concourses A, B, and C. You must be in Transit to Access the Hotel.</p>
        <p>Passengers are strongly advised not to pass through Immigration and Customs and exit the Terminal as they will be denied access back in to the Hotel until 3 hours prior to their “outbound” flight’s departure.</p>
@@ -12,9 +14,14 @@ function Imp() {
        <p>Access to the Hotel Reception in Concourse A can be made using the elevators located near gates A1 or A24. In Concourse B, access to the Hotel Reception can be made using the elevators located between near gates B14 or B22. In Concourse C, one can access the Hotel Reception using the dedicated escalators or elevator located in between gates C15 and C17. We do not have a hotel located in Concourse D.</p>
        <p>Hotel guests can move between all four (04) concourses A, B, C and D (Airside), however Dubai International Hotel is only located inside Concourses A, B and C of Dubai International Airport. If you are arriving and departing with on only Emirates Airlines, you might not be allowed access into Concourse D.</p>
        <p>It is strongly recommended that passengers carry their toiletries etc. in their hand luggage, as they will be unable to retrieve their checked-in luggage for the reasons mentioned in the aforementioned points.</p>
+       <div  className="scroll-containers">
+          <button className="scroll-buttons" onClick={handletopclick} >
+            Home <FaAnglesUp />
+          </button>
+        </div>
     </div>
     </div>
   )
-}
+});
 
-export default Imp
+export default Imp;

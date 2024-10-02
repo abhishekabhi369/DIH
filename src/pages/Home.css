@@ -2,7 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl:wght@400;700&display=swap');
-
+.body{
+font-family: sans-serif;
+}
 .home {
   position: relative;
   height: 100vh;
@@ -38,28 +40,36 @@
 }
 
 .nav-links li {
-  margin: 10px 15px ;
+  margin:20px 15px ;
+  background-color: #603F83FF;
+  border-radius: 10px;
+  padding:0px 10px 0px 10px;
+  border: 1px solid rgb(122, 122, 122);
   
  
+}
+.link1{
+  background-color: rgba(96, 63, 131, 0.671) !important;
+  transition:  background-color .8s;
 }
 .link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.801);
   font-size: 28px;
-
+  
   cursor: pointer;
   font-weight: 600;
   letter-spacing: .5px;
-
+  border-radius: 10px;
 
 }
-.nav-links a:hover{
-  color:rgb(25, 24, 27);
-  text-shadow: -1px -3px 17px rgba(255, 255, 255, 0.705);
+
+.link1:hover{ 
+  background-color: #603F83FF !important;
 }
 
 .book-now-container {
-  /* background-color: #486A9E; */
+ 
   background-color: #603F83FF;
   color: #fefaef;
   border: none;
@@ -71,7 +81,7 @@
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  transition: all 0.5s ease; /* Add this line for smooth transition */
+  transition: all 0.5s ease; 
   position: relative;
   cursor: pointer;
   left: 90%;
@@ -85,6 +95,7 @@
   left: 75%;
   cursor: default;
   position: relative;
+  z-index: 99;
 }
 
 .button-text {
@@ -308,8 +319,8 @@ label input:focus {
 .mainpoint-div{
 
   position: absolute;
-  left: 12%;
-  z-index: 99;
+  left: 20%;
+  z-index: 9;
   bottom: 12%;
 
 }
@@ -342,8 +353,7 @@ label input:focus {
   text-transform: uppercase;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.801);
-  font-size: 28px;
-
+  font-size: 20px;
   cursor: pointer;
   font-weight: 600;
   letter-spacing: .5px;
@@ -352,13 +362,11 @@ label input:focus {
   position: absolute;
   left: 86.25%;
  bottom: 0;
- 
+ z-index: 99;
   width: 6em;
 }
 
-.body{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 .font-text{
   position: absolute;
   top: 15%;
@@ -378,4 +386,51 @@ label input:focus {
 }
 .head-names p{
   margin: 10px 15px ;
+}
+
+.logo-dih{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 50px;
+}
+.scroll-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background: linear-gradient(
+     rgba(96, 63, 131, 0),
+    rgba(96, 63, 131, 0.1),
+    rgba(96, 63, 131, 0.2),
+    rgba(96, 63, 131, 0.3),
+    rgba(96, 63, 131, 0.4),
+    rgba(96, 63, 131, 0.5),
+  rgba(96, 63, 131, 0.6) ,
+  rgba(96, 63, 131, 0.7) , 
+  rgba(96, 63, 131, 0.8), 
+  rgba(96, 63, 131, 0.9) ,
+  rgba(96, 63, 131, 01 )) !important ;
+;
+
+  padding: 10px 0;
+}
+
+.scroll-button {
+
+
+  background-color: transparent;
+ border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  transition:  0.3s ease;
+}
+
+ .scroll-button:hover{
+  transform: scale(1.1);
+}
+.scroll-button svg {
+  margin-left: 8px; /* Space between text and icon */
+  font-size: 1.2em; /* Slightly larger icon */
 }

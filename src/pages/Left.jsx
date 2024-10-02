@@ -3,11 +3,17 @@ import LeftSlide from './LeftSlide';
 import './Left.css';
 
 
-function Left({ tagline }) {
+function Left({ tagline ,onLeftClick,onCloseClick  }) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleButtonClick = () => {
     setIsExpanded(!isExpanded);
+    if (isExpanded == false) {
+      onLeftClick();
+    }else{
+      onCloseClick()
+    }
+   
   };
 
   return (
@@ -23,7 +29,7 @@ function Left({ tagline }) {
         <div className="form-contents" >
           <button className="close-buttons" onClick={handleButtonClick}>×</button>
           <div className="left-slide-container" >
-            <LeftSlide tagline={tagline}  />
+            <LeftSlide tagline={tagline} onLeftClick={onLeftClick} />
           </div>
         </div>
       )}

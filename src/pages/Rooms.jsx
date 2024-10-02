@@ -5,18 +5,17 @@ import './Room.css';
 import Card from 'react-bootstrap/Card';
 import { TiExportOutline } from "react-icons/ti";
 import Button from 'react-bootstrap/Button';
-
+import CloseButton from 'react-bootstrap/CloseButton';
 function Rooms({ styles }) {
   const [show, setShow] = useState(false);
   const [selectedRoom, setSelectedRoom] = useState(null);
   const [hours, setHours] = useState("01 - 03 Hours Stay");
-  const [price, setPrice] = useState("");  // Store the price directly
-
+  const [price, setPrice] = useState(""); 
   const handleClose = () => setShow(false);
 
   const handleShow = (room) => {
     setSelectedRoom(room);
-    setPrice(room.prices[hours]);  // Set the price when room is selected
+    setPrice(room.prices[hours]);  
     setShow(true);
   };
 
@@ -30,7 +29,7 @@ function Rooms({ styles }) {
     setHours(selectedHours);
 
     if (selectedRoom) {
-      // Update price based on the selected room and the selected hours
+ 
       setPrice(selectedRoom.prices[selectedHours]);
     }
   };
@@ -161,7 +160,7 @@ function Rooms({ styles }) {
                     <h6 className='rooom-name'>{display.name}</h6>
                     <div className='cardbody-div'>
                       <p className="price1" style={{ fontWeight: "600" }}>{hours}</p>
-                      <p className="price2" style={{ fontWeight: "600" }}>{display.prices[hours]}</p> {/* Display price */}
+                      <p className="price2" style={{ fontWeight: "600" }}>{display.prices[hours]}</p> 
                     </div>
 
                     <div className="details-container">
@@ -181,8 +180,10 @@ function Rooms({ styles }) {
       <Modal show={show} onHide={handleClose} dialogClassName="custom-modal" size='lg'>
         {selectedRoom && (
           <>
-            <Modal.Header>
+            <Modal.Header  className="custom-modal-header" >
+           
               <Modal.Title style={{color:"white "}}>{selectedRoom.name}</Modal.Title>
+              <button type="button" className="btn-close custom-btn-close" onClick={handleClose}></button>
             </Modal.Header>
             <Modal.Body className="custom-modal-body">
               {selectedRoom.type === 'slideshow' && (
@@ -195,11 +196,7 @@ function Rooms({ styles }) {
                 </Carousel>
               )}
             </Modal.Body>
-            <Modal.Footer>
-              <Button variant="secondary" onClick={handleClose}>
-                CLOSE
-              </Button>
-            </Modal.Footer>
+           
           </>
         )}
       </Modal>

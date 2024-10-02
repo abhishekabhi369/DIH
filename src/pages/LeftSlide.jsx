@@ -26,6 +26,7 @@ function LeftSlide( { tagline }) {
     setSelectedImage(img);
     setSelectedText(points);
     setShow(true);
+   
   };
 
   return (

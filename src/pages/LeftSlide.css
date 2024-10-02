@@ -1,13 +1,11 @@
 .left-slide-content{
-    
+    padding-top: 2em;
     font-weight: 400;
-    line-height: 3.2em;
+padding-right: 1em;
+text-align: justify;
     font-size: 16px;
-    margin-top: 50px;
-   width: 100%;
+
 }
-
-
 
   .left-slide-content-list {
     cursor: pointer;
@@ -17,7 +15,7 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  
+
   .left-slide-content-list:hover {
     text-shadow: 0px 15px 23px rgba(0, 0, 0, 0.932);;
   }
@@ -42,23 +40,21 @@
   }
   .custom-modal .modal-content {
     background-color: #603F83FF;
-    /* background-color: transparent; */
-    /* border-radius: 10px; */
     border: none;
   }
   
   .custom-modal .modal-footer {
-    background-color: rgba(69, 68, 71, 0.541); /* Change footer background */
-    color: white; /* Change text color */
+    background-color: rgba(69, 68, 71, 0.541); 
+    color: white; 
     border: none;
   }
   .modal-backdrop.show {
-    background-color: rgba(0, 0, 0, 0.8); /* Darker overlay background */
+    background-color: rgba(0, 0, 0, 0.8);
   }
   .Left-main h5{
   
     margin-bottom: 2em;
-    padding-right: 1em;
+  
     color: rgb(255, 209, 124);
   }
   .Left-main {
@@ -68,5 +64,4 @@
    left: 2%;
    margin-left: 10%;
    margin-right: 22%;
-
   }

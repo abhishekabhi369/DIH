@@ -1,11 +1,28 @@
 .div-para{
-    width: 80%;
-    max-height: 500px;
-    margin-left: 4em;
-    margin-top: 5em;
-    padding: 10px 15px; 
-    overflow-y: auto;
+   color: white;
+  height: 100vh;
+  padding-top: 5%;
 }
 .div-para p{
-    margin: 10px 0;
+  
+  margin-bottom: 0px;
+  padding-top:1%;
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align: justify;
+}
+.scroll-containers{
+  margin-top: 5%;
+  text-align: center;
+}
+.scroll-buttons{
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+     cursor: pointer;
+   color: white;
+   transition:  0.3s ease;
+}
+.scroll-buttons:hover{
+  transform: scale(1.1);
 }

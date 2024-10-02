@@ -60,7 +60,7 @@ display: flex;
   background-image: url(https://banner2.cleanpng.com/20190616/fxy/kisspng-arrow-vector-graphics-clip-art-portable-network-gr-direita-png-1713886554463.webp);
 }
 
-/*  */
+
 ::placeholder{
   opacity: .5;
 }
@@ -75,4 +75,19 @@ label{
 }
 .image-carousal{
   width: 800px;
+}
+
+.custom-btn-close {
+  --bs-btn-close-bg: url('https://cdn-icons-png.flaticon.com/256/458/458595.png');
+  --bs-btn-close-opacity: 1; 
+  --bs-btn-close-hover-opacity: 1;
+  width: 1.5em;
+  height: 1.5em;
+  border: none;
+  opacity: 1;
+}
+
+.custom-btn-close:hover {
+  
+  opacity: 0.8;
 }
